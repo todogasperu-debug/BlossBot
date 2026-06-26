@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad | Blossbot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #cbd5e1;
+            --heading-color: #f8fafc;
+            --accent-color: #3b82f6;
+            --accent-hover: #60a5fa;
+            --border-color: #334155;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .header-container {
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.9) 100%);
+            border-bottom: 1px solid var(--border-color);
+            backdrop-filter: blur(10px);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .header-container h1 {
+            color: var(--heading-color);
+            font-size: 3rem;
+            font-weight: 800;
+            margin: 0 0 10px 0;
+            letter-spacing: -0.05em;
+        }
+
+        .updated-date {
+            color: var(--accent-color);
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .main-container {
+            max-width: 800px;
+            margin: -40px auto 40px auto;
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 50px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--border-color);
+        }
+
+        h2 {
+            color: var(--heading-color);
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::before {
+            content: '';
+            display: block;
+            width: 12px;
+            height: 12px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            background: rgba(15, 23, 42, 0.5);
+            padding: 20px 20px 20px 40px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--accent-hover);
+            text-decoration: underline;
+        }
+
+        .nav-links {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .nav-links a {
+            display: inline-block;
+            background: var(--accent-color);
+            color: #fff;
+            padding: 10px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            background: var(--accent-hover);
+        }
+
+        strong {
+            color: var(--heading-color);
+        }
+
+        @media (max-width: 768px) {
+            .main-container {
+                margin: -20px 15px 40px 15px;
+                padding: 30px 20px;
+            }
+            .header-container h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header-container">
+        <h1>Política de Privacidad</h1>
+        <div class="updated-date">Última actualización: 26 de junio de 2026</div>
+    </header>
+
+    <main class="main-container">
+        <p>En <strong>Blossbot</strong>, la privacidad y la seguridad de los datos de nuestros usuarios son de máxima prioridad. Esta Política de Privacidad explica qué información recopilamos, cómo la almacenamos y para qué la utilizamos cuando invitas o interactúas con Blossbot en Discord.</p>
+
+        <h2>1. Información que Recopilamos</h2>
+        <p>Para funcionar correctamente y ofrecer sus características avanzadas de moderación y verificación, Blossbot recopila los siguientes datos básicos de Discord:</p>
+        <ul>
+            <li><strong>IDs de Discord:</strong> Almacenamos el ID único de los servidores (Guild IDs), canales (Channel IDs), roles (Role IDs) y usuarios (User IDs) estrictamente para fines funcionales (configuración del panel, autoroles, advertencias, tickets y logs).</li>
+            <li><strong>Contenido de Mensajes (Transitorio):</strong> Blossbot procesa el contenido de los mensajes en tiempo real para sus sistemas Anti-Raid y moderación (por ejemplo, detectar spam o enlaces maliciosos). <strong>No guardamos permanentemente</strong> el historial de mensajes de los usuarios, salvo en los casos puntuales detallados abajo (Transcripts).</li>
+            <li><strong>Transcripts de Tickets:</strong> Si la opción está habilitada en el servidor, Blossbot puede generar y enviar al canal de logs una transcripción del historial de chat temporal dentro de un Ticket de Verificación cuando este es cerrado o resuelto.</li>
+            <li><strong>Configuración del Servidor:</strong> Guardamos preferencias definidas por los administradores (ej. canal de logs, edad mínima para Anti-Raid, mensajes personalizados) en nuestra base de datos local JSON.</li>
+        </ul>
+
+        <h2>2. Uso de la Información</h2>
+        <p>Toda la información recopilada se utiliza exclusivamente para:</p>
+        <ul>
+            <li>Asegurar la funcionalidad del bot (sistemas de moderación, anti-raid, tickets).</li>
+            <li>Guardar configuraciones específicas para que el bot responda de manera personalizada en tu servidor.</li>
+            <li>Mantener un historial interno de moderación (warns, baneos, sistema de reputación) para que el equipo de staff del servidor pueda revisarlo.</li>
+        </ul>
+        <p><strong>Bajo ninguna circunstancia Blossbot vende, comercializa o distribuye tus datos a terceros.</strong> Toda la información se procesa y almacena con el único propósito de proveer el servicio en la plataforma de Discord.</p>
+
+        <h2>3. Almacenamiento y Retención de Datos</h2>
+        <ul>
+            <li>Los datos de configuración y el historial de moderación (warns/reputación) se almacenan de forma segura.</li>
+            <li>Los datos persisten mientras el bot se encuentre en tu servidor para evitar pérdida de configuración ante reinicios.</li>
+            <li>Los datos son removidos o pueden ser sobrescritos en limpiezas periódicas si un servidor expulsa al bot y permanece inactivo por mucho tiempo.</li>
+        </ul>
+
+        <h2>4. Derechos de los Usuarios y Eliminación de Datos</h2>
+        <p>De acuerdo con las normativas internacionales de protección de datos (incluyendo el RGPD / GDPR), tienes el derecho a solicitar la visualización o eliminación de cualquier dato asociado a tu ID de Discord.</p>
+        <ul>
+            <li><strong>Propietarios de Servidor:</strong> Pueden expulsar al bot del servidor y solicitar que toda la configuración y bases de datos locales vinculadas a su Guild ID sean purgadas.</li>
+            <li><strong>Usuarios Finales:</strong> Pueden solicitar la eliminación de su registro de reputación o advertencias contactando directamente a los administradores del servidor respectivo, o al soporte del bot si se trata de un registro global.</li>
+        </ul>
+
+        <h2>5. Menores de Edad</h2>
+        <p>Blossbot cumple con las reglas de Discord y no recopila a sabiendas datos personales identificables de usuarios menores de 13 años (o la edad mínima requerida en su país). Si descubrimos que hemos recopilado información de un menor sin el consentimiento verificable de sus padres, tomaremos las medidas necesarias para eliminarla.</p>
+
+        <h2>6. Cambios en la Política de Privacidad</h2>
+        <p>Nos reservamos el derecho de actualizar esta Política de Privacidad en cualquier momento. Los cambios significativos se comunicarán a través de nuestros canales oficiales o repositorios (ej. GitHub). El uso continuado del bot después de la publicación de los cambios constituye tu aceptación.</p>
+
+        <h2>7. Contacto</h2>
+        <p>Si tienes preguntas, dudas legales o requieres ejercer tu derecho de eliminación de datos, por favor abre un issue en nuestro repositorio de GitHub o contacta al desarrollador principal de Blossbot.</p>
+
+        <div class="nav-links">
+            <a href="terms.html">Leer las Condiciones del Servicio</a>
+        </div>
+    </main>
+
+</body>
+</html>
