@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condiciones del Servicio | Blossbot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #cbd5e1;
+            --heading-color: #f8fafc;
+            --accent-color: #3b82f6;
+            --accent-hover: #60a5fa;
+            --border-color: #334155;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .header-container {
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.9) 100%);
+            border-bottom: 1px solid var(--border-color);
+            backdrop-filter: blur(10px);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .header-container h1 {
+            color: var(--heading-color);
+            font-size: 3rem;
+            font-weight: 800;
+            margin: 0 0 10px 0;
+            letter-spacing: -0.05em;
+        }
+
+        .updated-date {
+            color: var(--accent-color);
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .main-container {
+            max-width: 800px;
+            margin: -40px auto 40px auto;
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 50px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--border-color);
+        }
+
+        h2 {
+            color: var(--heading-color);
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::before {
+            content: '';
+            display: block;
+            width: 12px;
+            height: 12px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            background: rgba(15, 23, 42, 0.5);
+            padding: 20px 20px 20px 40px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--accent-hover);
+            text-decoration: underline;
+        }
+
+        .nav-links {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .nav-links a {
+            display: inline-block;
+            background: var(--accent-color);
+            color: #fff;
+            padding: 10px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            background: var(--accent-hover);
+        }
+
+        @media (max-width: 768px) {
+            .main-container {
+                margin: -20px 15px 40px 15px;
+                padding: 30px 20px;
+            }
+            .header-container h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header-container">
+        <h1>Condiciones del Servicio</h1>
+        <div class="updated-date">Última actualización: 26 de junio de 2026</div>
+    </header>
+
+    <main class="main-container">
+        <p>Bienvenido/a a <strong>Blossbot</strong>. Al invitar, interactuar o utilizar a Blossbot (en adelante "el Bot" o "el Servicio") en tu servidor de Discord, aceptas cumplir y estar sujeto a los siguientes Términos y Condiciones del Servicio. Si no estás de acuerdo con estos términos, no debes utilizar el Bot.</p>
+
+        <h2>1. Descripción del Servicio</h2>
+        <p>Blossbot es un bot de Discord diseñado para proporcionar herramientas avanzadas de moderación, sistemas de verificación, gestión de tickets, sistemas anti-raid y utilidades generales para la administración de servidores de Discord.</p>
+
+        <h2>2. Aceptación de los Términos</h2>
+        <p>Al agregar a Blossbot a un servidor de Discord, el propietario del servidor y los administradores reconocen que han leído, comprendido y aceptado estas condiciones. Es responsabilidad de los administradores asegurarse de que el uso del Bot dentro de su comunidad cumpla con los Términos de Servicio de Discord.</p>
+
+        <h2>3. Restricciones de Uso</h2>
+        <p>Estás de acuerdo en no utilizar Blossbot para:</p>
+        <ul>
+            <li>Violar las directrices de la comunidad o los Términos de Servicio de Discord.</li>
+            <li>Automatizar comportamientos maliciosos, realizar ataques de denegación de servicio (DDoS) o saturar la API de Discord mediante comandos masivos.</li>
+            <li>Fomentar o participar en actividades ilegales, discurso de odio, acoso o distribución de material inapropiado.</li>
+            <li>Intentar vulnerar la seguridad, realizar ingeniería inversa o buscar vulnerabilidades (exploits) en el código de Blossbot.</li>
+        </ul>
+
+        <h2>4. Disponibilidad del Servicio</h2>
+        <p>Hacemos todo lo posible por mantener a Blossbot en línea y operativo las 24 horas del día. Sin embargo, no garantizamos una disponibilidad ininterrumpida (100% de uptime). El Servicio puede experimentar tiempo de inactividad debido a mantenimiento, actualizaciones, problemas de red o limitaciones de la API de Discord.</p>
+        <p>No nos hacemos responsables de los posibles daños, pérdida de datos o inconvenientes derivados de caídas o fallas en el servicio.</p>
+
+        <h2>5. Propiedad Intelectual</h2>
+        <p>El código, la marca "Blossbot", su logotipo, diseño y funcionalidades exclusivas son propiedad intelectual de los desarrolladores de Blossbot. No se permite copiar, distribuir ni reclamar como propio el código base del bot sin autorización explícita.</p>
+
+        <h2>6. Limitación de Responsabilidad</h2>
+        <p>Blossbot se proporciona "tal cual" (as is) y "según disponibilidad". Los desarrolladores no serán responsables de:</p>
+        <ul>
+            <li>Daños directos, indirectos o accidentales derivados del uso o incapacidad de usar el bot.</li>
+            <li>Acciones destructivas tomadas por administradores o miembros del servidor utilizando los comandos del bot (por ejemplo, baneos o purgas accidentales).</li>
+            <li>Pérdida de datos debido a reinicios, corrupción de bases de datos o errores (bugs) inesperados.</li>
+        </ul>
+
+        <h2>7. Modificaciones a los Términos</h2>
+        <p>Nos reservamos el derecho de modificar estos Términos de Servicio en cualquier momento para reflejar nuevas funciones o cambios en las normativas. Se recomienda revisar esta página periódicamente. El uso continuo del bot después de publicar cambios constituye tu aceptación de los mismos.</p>
+
+        <h2>8. Terminación del Servicio</h2>
+        <p>Nos reservamos el derecho de bloquear permanentemente a cualquier usuario o retirar el bot de cualquier servidor que viole estos Términos de Servicio o los Términos de Discord, sin previo aviso.</p>
+
+        <h2>9. Contacto</h2>
+        <p>Para dudas, reportes de errores (bugs) o sugerencias sobre el uso del bot, por favor contacta con el equipo de soporte oficial o con el desarrollador principal a través de nuestro servidor de soporte o repositorio en GitHub.</p>
+
+        <div class="nav-links">
+            <a href="privacy.html">Leer la Política de Privacidad</a>
+        </div>
+    </main>
+
+</body>
+</html>
