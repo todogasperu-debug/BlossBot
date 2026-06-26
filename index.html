@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal | Blossbot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #cbd5e1;
+            --heading-color: #f8fafc;
+            --accent-color: #3b82f6;
+            --accent-hover: #60a5fa;
+            --border-color: #334155;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .main-container {
+            max-width: 600px;
+            width: 90%;
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 50px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--border-color);
+        }
+
+        .logo-placeholder {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, var(--accent-color), #8b5cf6);
+            border-radius: 50%;
+            margin: 0 auto 30px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: white;
+            font-weight: 800;
+            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin: 0 0 15px 0;
+            letter-spacing: -0.05em;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            color: #94a3b8;
+        }
+
+        .links-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .link-card {
+            display: block;
+            background: rgba(15, 23, 42, 0.5);
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .link-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            background: rgba(30, 41, 59, 0.8);
+        }
+
+        .link-card h2 {
+            color: var(--heading-color);
+            font-size: 1.4rem;
+            margin: 0 0 8px 0;
+            transition: color 0.3s ease;
+        }
+
+        .link-card:hover h2 {
+            color: var(--accent-color);
+        }
+
+        .link-card span {
+            color: #94a3b8;
+            font-size: 0.95rem;
+        }
+
+        @media (min-width: 600px) {
+            .links-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="main-container">
+        <div class="logo-placeholder">B</div>
+        <h1>Blossbot</h1>
+        <p>Documentación Legal y Normativas del Servicio</p>
+
+        <div class="links-grid">
+            <a href="terms.html" class="link-card">
+                <h2>Condiciones del Servicio</h2>
+                <span>Reglas de uso del bot</span>
+            </a>
+            <a href="privacy.html" class="link-card">
+                <h2>Política de Privacidad</h2>
+                <span>Cómo manejamos los datos</span>
+            </a>
+        </div>
+    </main>
+
+</body>
+</html>
